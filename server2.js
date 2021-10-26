@@ -88,8 +88,8 @@ var updateCourseTopic = function({ id, topic }) {
   return coursesData.filter(course => course.id === id) [0];
 }
 
-var addCourse = function ({ course }) {
-  coursesData.push({ course });
+var addCourse = function ({ input }) {
+  coursesData.push(input);
   return coursesData;
 }
 
